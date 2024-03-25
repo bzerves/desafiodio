@@ -1,0 +1,29 @@
+// Definindo a variável com nome e experiência (XP) do herói
+let heroi = {
+    nome: "Aventura",
+    XP: 7001
+};
+
+// Definindo a estrutura de decisão para classificar o nível do herói
+let nivel;
+
+if (heroi.XP < 1000) {
+    nivel = "Ferro";
+} else if (heroi.XP <= 2000) {
+    nivel = "Bronze";
+} else if (heroi.XP <= 5000) {
+    nivel = "Prata";
+} else if (heroi.XP <= 7000) {
+    nivel = "Ouro";
+} else if (heroi.XP <= 8000) {
+    nivel = "Platina";
+} else if (heroi.XP <= 9000) {
+    nivel = "Ascendente";
+} else if (heroi.XP <= 10000) {
+    nivel = "Imortal";
+} else {
+    nivel = "Radiante";
+}
+
+// Exibindo a mensagem
+console.log(`O herói de nome ${heroi.nome} está no nível ${nivel}`);
