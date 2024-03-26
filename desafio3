@@ -1,0 +1,21 @@
+class Heroi {
+    constructor(nome, idade, tipo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.tipo = tipo;
+    }
+
+    atacar() {
+        const ataques = {
+            'mago': 'sua magia',
+            'guerreiro': 'uma espada',
+            'monge': 'artes marciais',
+            'ninja': 'shuriken'
+        };
+        const ataque = ataques[this.tipo] || 'fez um ataque desconhecido';
+        console.log(`O ${this.tipo} de nome ${this.nome} tem ${this.idade} anos e atacou usando ${ataque}.`);
+    }
+}
+
+const heroi1 = new Heroi('Aragon', 50, 'ninja');
+heroi1.atacar();
